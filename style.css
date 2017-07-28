@@ -1,6 +1,6 @@
 	:root {
 		--main-color: #282a36;
-		--main-muted: #657e7e;
+		--main-muted: #abb2bf;
 		--green: #5af78e;
 		--orange: #b48ead;
 		--red: #ff5c57;
@@ -9,7 +9,7 @@
 		--magenta: #ff6ac1;
 		--violet: #96b5b4;
 		--yellow: #f3f99d;
-		--foreground-light: #abb2bf;
+		--foreground-light: #657e7e;
 		--white: #f1f1f0;
 	}
 
