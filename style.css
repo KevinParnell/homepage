@@ -9,7 +9,7 @@
 		--magenta: #ff6ac1;
 		--violet: #96b5b4;
 		--yellow: #f3f99d;
-		--foreground-light: #657e7e;
+		--foreground-light: #9aedfe;
 		--white: #f1f1f0;
 	}
 
@@ -65,7 +65,7 @@
 		color: var(--white);
 		background-color: var(--main-color);
 		outline: none;
-		border: 2px solid #434D61;
+		border: 2px solid #ff6ac1;
 		border-radius: 100px;
 		width: 40%;
 		height: 20px;
@@ -81,7 +81,7 @@
 	}
 		
 	input:hover {
-		border: 2px solid var(--foreground-light);
+		border: 2px solid #9aedfe;
 	}
 	
 	#logo {
@@ -122,7 +122,7 @@
 		user-select: none;
 	}
 	
-	#reddit ,#youtube, #netflix, #linux, #fourchan, #github  {
+	#reddit ,#youtube, #netflix, #macos, #fourchan, #github  {
 		color: var(--main-color);
 		transition: 0.25s ease;
         border-radius: 100px;
@@ -144,7 +144,7 @@
         background-color: var(--blue);
     }
 
-    #linux {
+    #macos {
         background-color: var(--yellow);
     }
 
@@ -155,7 +155,7 @@
 	#github {
         background-color: var(--red);
     }
-	#fourchan:hover, #netflix:hover, #linux:hover, #youtube:hover , #reddit:hover, #github:hover {
+	#fourchan:hover, #netflix:hover, #macos:hover, #youtube:hover , #reddit:hover, #github:hover {
         filter: opacity(0.6);
 	}
 
