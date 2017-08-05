@@ -1,16 +1,16 @@
 	:root {
-		--main-color: #282a36;
+		--main-color: #f2f2f2;
 		--main-muted: #abb2bf;
-		--green: #5af78e;
+		--green: #4ca34a;
 		--orange: #b48ead;
-		--red: #ff5c57;
-		--cyan: #9aedfe;
-		--blue: #57c7ff;
-		--magenta: #ff6ac1;
+		--red: #e75544;
+		--cyan: #65c2cd;
+		--blue: #72bef2;
+		--magenta: #a826a6;
 		--violet: #96b5b4;
-		--yellow: #f3f99d;
-		--foreground-light: #9aedfe;
-		--white: #f1f1f0;
+		--yellow: #dbc28e;
+		--foreground-light: #65c2cd;
+		--white: #ffffff;
 	}
 
     ::-webkit-scrollbar {
@@ -62,10 +62,10 @@
 	input {
 		font-family: 'Product Sans', monospace;
 		text-align: center;
-		color: var(--white);
+		color: #474747;
 		background-color: var(--main-color);
 		outline: none;
-		border: 2px solid #ff6ac1;
+		border: 2px solid #a826a6;
 		border-radius: 100px;
 		width: 40%;
 		height: 20px;
@@ -81,7 +81,7 @@
 	}
 		
 	input:hover {
-		border: 2px solid #9aedfe;
+		border: 2px solid #65c2cd;
 	}
 	
 	#logo {
@@ -123,7 +123,7 @@
 	}
 	
 	#reddit ,#youtube, #netflix, #macos, #fourchan, #github  {
-		color: var(--main-color);
+		color: #474747;
 		transition: 0.25s ease;
         border-radius: 100px;
         width: 45px;
