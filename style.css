@@ -1,15 +1,15 @@
 	:root {
 		--main-color: #f2f2f2;
 		--main-muted: #abb2bf;
-		--green: #4ca34a;
+		--green: #70ebbe;
 		--orange: #b48ead;
-		--red: #e75544;
-		--cyan: #65c2cd;
-		--blue: #72bef2;
-		--magenta: #a826a6;
-		--violet: #96b5b4;
-		--yellow: #dbc28e;
-		--foreground-light: #65c2cd;
+		--red: #ff6262;
+		--cyan: #97c9ff;
+		--blue: #50a4ff;
+		--magenta: #a59ef6;
+		--violet: #d671f0;
+		--yellow: #d4d8a9;
+		--foreground-light: #97c9ff;
 		--white: #ffffff;
 	}
 
@@ -63,9 +63,9 @@
 		font-family: 'Product Sans', monospace;
 		text-align: center;
 		color: #474747;
-		background-color: var(--main-color);
+		background-color: #ffffff;
 		outline: none;
-		border: 2px solid #a826a6;
+		border: 2px solid #a59ef6;
 		border-radius: 100px;
 		width: 40%;
 		height: 20px;
@@ -81,7 +81,7 @@
 	}
 		
 	input:hover {
-		border: 2px solid #65c2cd;
+		border: 2px solid #97c9ff;
 	}
 	
 	#logo {
