@@ -1,18 +1,11 @@
 <!doctype html>
-<title>Home</title>
-<link rel="stylesheet" href="style.css">
-<link rel="icon" type="image/x-icon" href="favicon.ico">
-<body>
-
-	<script src="google.js"></script>
-	
-
+<html>
 	<head>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="style.css">
-        <link rel="icon" href="favicon.ico" type="image/x-icon"/>
-    </head>
-	
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="style.css" />
+		<link rel="icon" type="image/x-icon" href="favicon.ico" />
+		<title>Home</title>
+	</head>
 	<div id="logo">
 		<!--Uses text and not an image to speed things up -->
 		<span style="color: var(--blue)">G</span>
@@ -22,18 +15,19 @@
 		<span style="color: var(--green)">l</span>
 		<span style="color: var(--red)">e</span>
 	</div>
-	
-	<div>
-		<input id="search_bar", style="search", type="text", spellcheck="false", onKeydown="Javascript: if (event.keyCode == 13) search();", autofocus>
-	</div>
-	
-	<div id="icons", style="font-size:24px">
-		<a id="reddit", class="fa fa-reddit-alien", href="https://www.reddit.com/" target="_blank"></a>
-        <a id="youtube", class="fa fa-youtube-play", href="https://www.youtube.com/" target="_blank"></a>
-        <a id="macos", class="fa fa-apple", href="https://www.reddit.com/r/MacOS/" target="_blank"></a>
-		<a id="netflix", class="fa fa-snowflake-o", href="https://www.netflix.com/browse" target="_blank"></a>
-		<a id="fourchan", class="fa fa-angle-right", href="https://boards.4chan.org/g/" target="_blank"></a>
-        <a id="github", class="fa fa-github-alt", href="https://github.com/kevinarefunny" target="_blank"></a>
-	</div>
+	<form id="search-wrapper" method="get" action="https://www.google.com/search">
+		<input id="search" type="text" placeholder="Search with Google" name="q" autocomplete="on" />
+		<input id="search-button" type="submit" value="&#61442;" />
+	</form>
+	<body>
+		<div id="links-container">
+			<a class="link link-reddit" title="Reddit" href="https://www.reddit.com" target="_blank"></a><!--
+			--><a class="link link-youtube" title="YouTube" href="https://www.youtube.com" target="_blank"></a><!--
+			--><a class="link link-apple" title="macOS" href="https://www.reddit.com/r/MacOS/" target="_blank"></a><!--
+			--><a class="link link-netflix" title="Netflix" href="https://www.netflix.com" target="_blank"></a><!--
+			--><a class="link link-4chan" title="4chan /g/" href="https://www.4chan.org/g" target="_blank"></a><!--
+			--><a class="link link-github" title="GitHub" href="https://www.github.com" target="_blank"></a>
+			<!-- You can add <br /> tags directly after any of the <a> elements to put the following links on a new line. This is recommended for when you have many links. -->
+		</div>
 	</body>
-</head>
+</html>

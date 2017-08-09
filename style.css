@@ -1,192 +1,144 @@
-	:root {
-		--main-color: #f2f2f2;
-		--main-muted: #abb2bf;
-		--green: #70ebbe;
-		--orange: #b48ead;
-		--red: #ff6262;
-		--cyan: #97c9ff;
-		--blue: #50a4ff;
-		--magenta: #a59ef6;
-		--violet: #d671f0;
-		--yellow: #fcd78a;
-		--foreground-light: #97c9ff;
-		--white: #ffffff;
-	}
-
-    ::-webkit-scrollbar {
-        display: none;
-    }
-	
-	@keyframes rise {
-		0% {opacity:0;}
-		100% {opacity:1;}
-	}
-	
-	@keyframes fadein {
-		from {opacity:0.3;}
-		to {opacity:1;}
-	}
-
-@font-face {
-	font-family: 'Product Sans';
-	src: url('ProductSans.ttf');
+:root {
+	--main-color: #f2f2f2;
+	--main-muted: #abb2bf;
+	--green: #70ebbe;
+	--orange: #b48ead;
+	--red: #ff6262;
+	--cyan: #97c9ff;
+	--blue: #50a4ff;
+	--magenta: #a59ef6;
+	--violet: #d671f0;
+	--yellow: #fcd78a;
+	--foreground-light: #97c9ff;
+	--white: #ffffff;
 }
-	
-	body {
-        background-color: var(--main-color);
-        text-align: center;
-		margin: 0;
-	}
-		
-	
-	a:link , a:visited{
-		text-decoration: none;
-		color: var(--main-muted);
-		background-color:var(--main-color);
-		border-style: 2px solid;
-		border-radius: 3px;
-		padding: 8px;
-		width: 200px;
-		height: 100px;
-		
-		-webkit-touch-callout: none;
-		-webkit-user-select: none;
-		-khtml-user-select: none;
-		-moz-user-select: none;
-		-ms-user-select: none;
-		user-select: none;
-		
-	}
-	
-	
-	input {
-		font-family: 'Product Sans', monospace;
-		text-align: center;
-		color: #474747;
-		background-color: #ffffff;
-		outline: none;
-		border: 2px solid #a59ef6;
-		border-radius: 100px;
-		width: 40%;
-		height: 20px;
-		font-size: 20px;
-		padding : 8px;
-		box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.2);
-		position: relative;
-		transition: 0.2s ease;
-	}
-		
-	input:focus {
-		border: 2px solid var(--foreground-light);
-	}
-		
-	input:hover {
-		border: 2px solid #97c9ff;
-	}
-	
-	#logo {
-		margin-top: 100px;
-		font-family: 'Product Sans', monospace;
-		font-size: 80px;
-		text-align: center;
-		padding: 50px;	
-        color: var(--main-muted);
 
-		-webkit-touch-callout: none;
-		-webkit-user-select: none;
-		-khtml-user-select: none;
-		-moz-user-select: none;
-		-ms-user-select: none;
-		user-select: none;
-	}
-	
-	#big_g {
-		height: 100px;
-		margin-top: 50px;
-	}
-	
-	#icons {
-		position: center;
-		font-family: 'Product Sans', sans-serif;
-		text-align: center;
-		color: var(--main-muted);
-		font-size: 30px;
-		padding: 30px;
-		background: rgba(0,0,0,0);
-		
-		-webkit-touch-callout: none;
-		-webkit-user-select: none;
-		-khtml-user-select: none;
-		-moz-user-select: none;
-		-ms-user-select: none;
-		user-select: none;
-	}
-	
-	#reddit ,#youtube, #netflix, #macos, #fourchan, #github  {
-		color: #474747;
-		transition: 0.25s ease;
-        border-radius: 100px;
-        width: 45px;
-        height: 45px;
-        margin: 5px;
-        line-height: 45px;
-	}
-
-    #reddit {
-        background-color: var(--blue);
-    }
-
-    #youtube {
-        background-color: var(--red);
-    }
-
-    #netflix {
-        background-color: var(--blue);
-    }
-
-    #macos {
-        background-color: var(--yellow);
-    }
-
-    #fourchan {
-        background-color: var(--green);
-    }
-
-	#github {
-        background-color: var(--red);
-    }
-	#fourchan:hover, #netflix:hover, #macos:hover, #youtube:hover , #reddit:hover, #github:hover {
-        filter: opacity(0.6);
-	}
-
-
-.icon-arrow-down:before {
-  content: "\e900";
-  color: #000;
+::-webkit-scrollbar {
+	display: none;
 }
 
 @font-face {
-  font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?4rcyt');
-  src:  url('fonts/icomoon.eot?4rcyt#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?4rcyt') format('truetype'),
-    url('fonts/icomoon.woff?4rcyt') format('woff'),
-    url('fonts/icomoon.svg?4rcyt#icomoon') format('svg');
-  font-weight: normal;
-  font-style: normal;
+	font-family: "Font Awesome";
+	font-style: normal;
+	font-weight: 400;
+	src: url("fontawesome.woff2") format("woff2");
+}
+body {
+	background-color: #f2f2f2;
+	margin: 150px 0px 0px;
+	padding: 0px;
+	min-width: 720px;
+}
+#search-wrapper {
+	background-color: #ffffff;
+	padding: 0px;
+	width: 50%;
+	margin: 0px auto;
+	min-width: 640px;
+	position: relative;
+}
+#search {
+	font-family: "San Francisco Display", Helvetica, sans-serif;
+	color: #474747;
+	text-align: center;
+	border: 0px;
+	padding: 0px 48px 0px 24px;
+	box-sizing: border-box;
+	width: 100%;
+	height: 48px;
+	line-height: 16px;
+	font-size: 16px;
+	background: none;
+	transition: box-shadow 0.2s;
+}
+#search:focus {
+	box-shadow: 0px 0px 6px rgba(0,0,0,0.5);
 }
 
-[class^="icon-"], [class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+#search:hover {
+	box-shadow: 0px 0px 6px rgba(0,0,0,0.5);
 }
+#search-button {
+	font-family: "Font Awesome";
+	width: 48px;
+	height: 48px;
+	border: 0px;
+	background: none;
+	color: #aaa;
+	position: absolute;
+	right: 0px;
+	font-size: 18px;
+	padding: 0px;
+	cursor: pointer;
+}
+#search-button:hover {
+	color: #fff;
+}
+#logo {
+	margin-top: 0px;
+	font-family: "San Francisco Display", Helvetica, sans-serif;
+	font-size: 80px;
+	text-align: center;
+	padding: 50px;	
+	color: var(--main-muted);
+
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+#big_g {
+	height: 50px;
+	margin-top: 50px;
+}
+#links-container {
+	white-space: nowrap;
+	margin-top: 50px;
+	margin-bottom: 72px;
+	text-align: center;
+}
+.link {
+	display: inline-block;
+	width: 72px;
+	height: 72px;
+	line-height: 72px;
+	font-family: "Font Awesome";
+	font-size: 36px;
+	color: #fff;
+	text-decoration: none;
+	margin: 0px 18px 36px;
+	transition: height 0.2s, box-shadow 0.2s, margin 0.2s;
+	background: #444;
+}
+.link:before {
+	content: "?";
+}
+.link:hover {
+	height: 78px;
+	box-shadow: 0px -6px 0px rgba(0,0,0,0.2) inset,
+		0px 0px 6px rgba(0,0,0,0.5);
+	margin-bottom: 28px;
+}
+
+/*
+Modifying the link icons and colors is pretty self-explanatory. Look up icon names at
+http://fontawesome.io/icons/
+then find the CSS character code by searching for the icon's name in the CSS file
+http://fontawesome.io/assets/font-awesome/css/font-awesome.css
+*/
+
+.link-reddit {background:#50a4ff}
+.link-reddit:before {content:"\f281"}
+.link-youtube {background:#ff6262}
+.link-youtube:before {content:"\f16a"}
+.link-netflix {background:#50a4ff}
+.link-netflix:before {content:"\f2dc"}
+.link-4chan {background:#70ebbe}
+.link-4chan:before {content:"\f054"}
+.link-github {background:#ff6262}
+.link-github:before {content:"\f09b"}
+.link-apple {background:#fcd78a}
+.link-apple:before {content:"\f179"}
