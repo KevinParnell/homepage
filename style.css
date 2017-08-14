@@ -28,6 +28,11 @@ body {
 	margin: 150px 0px 0px;
 	padding: 0px;
 	min-width: 720px;
+	text-align:center; 
+} 
+#mainContainer { 
+margin:0 auto; 
+
 }
 #search-wrapper {
 	background-color: #ffffff;
